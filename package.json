@@ -1,0 +1,70 @@
+{
+  "name": "nextjs-template",
+  "version": "1.0.0",
+  "description": "A simple Next.js template.",
+  "homepage": "https://github.com/gregrickaby/nextjs-template/blob/main/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gregrickaby/nextjs-template.git"
+  },
+  "author": "gregrickaby <gregrickaby@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/gregrickaby/nextjs-template/issues"
+  },
+  "private": true,
+  "license": "GPL-2.0",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "build": "next build",
+    "clean": "rm -rf .next",
+    "deploy prod": "vercel --prod",
+    "deploy staging": "vercel",
+    "dev": "yarn clean && next dev",
+    "develop": "yarn dev",
+    "export": "next export",
+    "format": "npx prettier --config=prettier.config.js '**/*.{js,jsx,ts,tsx,md,html,css,scss,json}' --write || true",
+    "lint": "yarn format && yarn lint:js && yarn lint:css",
+    "lint:css": "npx stylelint --config=stylelint.config.js '**/*.css' --fix || true",
+    "lint:js": "npx eslint --config=.eslintrc.js ./ --fix || true",
+    "start": "next start",
+    "postbuild": "next-sitemap"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "next-sitemap": "^1.3.22",
+    "postcss": "^8.2.1",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.1",
+    "prop-types": "^15.7.2",
+    "stylelint": "^13.8.0",
+    "stylelint-config-standard": "^20.0.0",
+    "tailwindcss": "^2.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "npx eslint --config=.eslintrc.js --fix",
+    "*.{css,scss}": "npx stylelint --config=stylelint.config.js --fix",
+    "*.{md,html,json}": "npx prettier --config=prettier.config.js --write"
+  }
+}
