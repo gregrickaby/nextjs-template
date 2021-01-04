@@ -6,8 +6,8 @@ export default function Footer() {
       <hr />
       <p>
         website by{' '}
-        <a href={config.authorUrl} rel="noopener">
-          {config.siteAuthor}
+        <a href={config?.authorUrl} rel="noopener">
+          {config?.siteAuthor}
         </a>
       </p>
       <small>

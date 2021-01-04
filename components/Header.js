@@ -6,10 +6,10 @@ export default function Header() {
     <header className="space-y-2">
       <h1 className="text-4xl">
         <Link href="/">
-          <a>{config.siteName}</a>
+          <a>{config?.siteName}</a>
         </Link>
       </h1>
-      <p className="text-1xl">{config.siteDescription}</p>
+      <p className="text-1xl">{config?.siteDescription}</p>
     </header>
   )
 }
