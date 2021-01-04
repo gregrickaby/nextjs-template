@@ -2,6 +2,13 @@
 
 A simple Next.js template.
 
+## ✨ Features
+
+- [TailwindCSS](https://tailwindcss.com/)
+- [Next SEO](https://github.com/garmeeh/next-seo)
+- [Next Sitemap](https://github.com/iamvishnusankar/next-sitemap)
+- ESLint, Prettier, Stylelint, Husky, etc...
+
 ---
 
 ## 💻 Install
@@ -14,6 +21,28 @@ yarn create next-app my-awesome-app --example https://github.com/gregrickaby/nex
 or
 
 npx create-next-app my-awesome-app --example https://github.com/gregrickaby/nextjs-template
+```
+
+---
+
+## 🚀 Development
+
+Start development server:
+
+```bash
+yarn dev
+```
+
+Lint code:
+
+```
+yarn lint
+```
+
+Build for production:
+
+```bash
+yarn build
 ```
 
 ---
