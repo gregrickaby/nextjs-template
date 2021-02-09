@@ -1,12 +1,12 @@
 Thanks for contributing — you rock! 🤘
 
-## Maintainers
+## About
 
-This repo is maintained by [Greg Rickaby](https://gregrickaby.com/).
+This repo is maintained by [Greg Rickaby](https://gregrickaby.com/) and follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
 
 ## Submitting issues
 
-Before submitting your issue, make sure it has not been mentioned earlier. You can search through the [existing issues](https://github.com/gregrickaby/nextjs-template/issues) or [Github discussions](https://github.com/gregrickaby/nextjs-template/discussions)
+Before submitting your issue, make sure it has not been mentioned earlier. You can search through the [existing issues](https://github.com/gregrickaby/nextjs-template/issues) or [Github discussions](https://github.com/gregrickaby/nextjs-template/discussions).
 
 ## Contributing code
 
