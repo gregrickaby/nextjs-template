@@ -42,7 +42,7 @@ npm run lint
 Build and test for production:
 
 ```bash
-npm run build && npm run start
+npm run build && npm start
 ```
 
 ---
