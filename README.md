@@ -7,7 +7,7 @@ A simple Next.js template.
 - [TailwindCSS](https://tailwindcss.com/)
 - [Next SEO](https://github.com/garmeeh/next-seo)
 - [Next Sitemap](https://github.com/iamvishnusankar/next-sitemap)
-- ESLint, Prettier, Stylelint, Husky, etc...
+- Linting! ESLint, Prettier, Stylelint, Lefthook, etc...
 
 ---
 
@@ -30,19 +30,19 @@ npx create-next-app my-awesome-app --example https://github.com/gregrickaby/next
 Start development server:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 Lint code:
 
 ```
-yarn lint
+npm run lint
 ```
 
-Build for production:
+Build and test for production:
 
 ```bash
-yarn build
+npm run build && npm run start
 ```
 
 ---
