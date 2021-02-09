@@ -11,5 +11,5 @@ pre-commit:
        glob: "*.{css,scss}"
        run: npx stylelint --config=stylelint.config.js --fix {staged_files}
      prettier:
-       glob: ".{md,html,json}"
+       glob: "*.{md,html,json}"
        run: npx prettier --config=prettier.config.js --write {staged_files}
