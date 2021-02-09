@@ -1,7 +1,8 @@
 import config from '@/functions/config'
 import '@/styles/index.css'
-import PropTypes from 'prop-types'
+import '@/styles/global.css'
 import {DefaultSeo} from 'next-seo'
+import PropTypes from 'prop-types'
 
 export default function App({Component, pageProps}) {
   return (
