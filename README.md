@@ -35,7 +35,7 @@ npm run dev
 
 Lint code:
 
-```
+```bash
 npm run lint
 ```
 
@@ -49,4 +49,4 @@ npm run build && npm start
 
 ## :octocat: Contributing
 
-Feedback and contributions via Github [Issues](https://github.com/gregrickaby/nextjs-template/issues) and [Pull Requests](https://github.com/gregrickaby/nextjs-template/pulls) are welcome. Learn more by reading [Contributing.md](https://github.com/gregrickaby/nextjs-template/blob/main/.github/CONTRIBUTING.md) 🍻
+Feedback and contributions via Github [Issues](https://github.com/gregrickaby/nextjs-template/issues) and [Pull Requests](https://github.com/gregrickaby/nextjs-template/pulls) are welcome. Learn more by reading [Contributing.md](https://github.com/gregrickaby/nextjs-template/blob/main/CONTRIBUTING.md) 🍻
