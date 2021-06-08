@@ -1,4 +1,5 @@
+*.min.*
 .next/
 dist/
 node_modules/
-*.min.*
+public/
