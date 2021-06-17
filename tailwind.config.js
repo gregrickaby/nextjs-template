@@ -12,6 +12,9 @@ module.exports = {
         center: true,
         margin: 'auto'
       }
+    },
+    fontFamily: {
+      sans: ['Open Sans', 'sans-serif']
     }
   },
   variants: {},

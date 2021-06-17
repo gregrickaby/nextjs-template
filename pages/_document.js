@@ -3,8 +3,11 @@ import Document, {Head, Main, NextScript, Html} from 'next/document'
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en">
-        <Head />
+      <Html>
+        <Head>
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" />
+        </Head>
         <body>
           <Main />
           <NextScript />

@@ -1,12 +1,18 @@
 import config from '@/functions/config'
-import '@/styles/index.css'
 import '@/styles/global.css'
+import '@/styles/index.css'
 import {DefaultSeo} from 'next-seo'
+import Head from 'next/head'
 import PropTypes from 'prop-types'
 
 export default function App({Component, pageProps}) {
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
       <DefaultSeo
         title={`${config?.siteName} - ${config?.siteDescription}`}
         description={config?.siteDescription}

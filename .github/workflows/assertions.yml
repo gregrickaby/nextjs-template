@@ -17,11 +17,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          token: ${{ github.token }}
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+
+      - name: Use NPM 7
+        run: npm i -g npm@latest
 
       - name: Cache dependencies
         uses: actions/cache@v2
@@ -36,10 +41,10 @@ jobs:
         run: npm ci
 
       - name: Lint scripts
-        run: npx eslint '**/*.{js,ts,jsx,tsx}' --config=.eslintrc.js
+        run: npx eslint '**/*.{js,ts,jsx,tsx}'
 
       - name: Lint styles
-        run: npx stylelint '**/*.{css,scss}' --config=.stylelintrc.js
+        run: npx stylelint '**/*.{css,scss}'
 
       - name: Lint markdown
-        run: npx markdownlint '**/*.{md,mdx}' --config=.markdownlint.json
+        run: npx markdownlint '**/*.md'

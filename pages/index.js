@@ -1,6 +1,8 @@
 import Layout from '@/components/Layout'
 import config from '@/functions/config'
 import {NextSeo} from 'next-seo'
+import Image from 'next/image'
+import frostySunrise from '../public/images/frosty-sunrise.jpg'
 
 export default function Homepage() {
   return (
@@ -10,6 +12,11 @@ export default function Homepage() {
         description={config?.siteDescription}
       />
       <h1 className="text-xl">Homepage</h1>
+      <Image
+        alt="Picture of a frosty sunrise by Greg Rickaby"
+        placeholder="blur"
+        src={frostySunrise}
+      />
       <p>
         Decaffeinated instant froth mug rich aroma mountain lungo robusta
         ristretto single aromatic milk irish. Half affogato that skinny
